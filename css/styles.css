@@ -147,6 +147,7 @@ ul {
 
 .company {
   display: flex;
+  align-items: baseline;
 }
 
 .copyright .company {
@@ -154,13 +155,10 @@ ul {
   padding-bottom: 60px;
 }
 
-.info > .logo {
-  margin-bottom: 20px;
-}
-
 .footer {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 .footer .item:not(:last-child) {
@@ -242,7 +240,7 @@ ul {
 
 .overlay {
   max-width: 1600px;
-  height: 600px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid #c4c4c4;
@@ -341,7 +339,11 @@ ul {
 }
 
 .icon-svg {
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -427,23 +429,13 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--basic-text-color);
-}
-
-.social-icon {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-}
-
-.social-icon:hover,
-.social-icon:focus {
-  fill: #ffffff;
+  color: #afb1b8;
 }
 
 .social-network:hover,
 .social-network:focus {
   background-color: var(--accent-color);
+  color: #ffffff;
 }
 
 .social .website:not(:last-child) {
